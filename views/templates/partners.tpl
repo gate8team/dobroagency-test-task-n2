@@ -1,10 +1,12 @@
 {* Partners template here *}
+{* Consider that sponsors have isPartner flag = true or false *}
+{* Consider that partners have isPartner flag = true *}
 <h1 class="dark">{$generalSponsors}</h1>
 <ul class="partnersTwoCols">
     {foreach from = $partners item = partner}
         {if $partner->isImportant}
         <li>
-            <img src='http://placehold.it/450x120' />
+            <img src='http://placehold.it/450x120' /> {*In real system should be like this: <img src="{$partner->logo} />">*}
             <p>
                 <b class="companyName dark">{$partner->name}</b><br/>
                 {$partner->description}
@@ -21,7 +23,7 @@
     {foreach from = $partners item = partner}
         {if !$partner->isImportant}
             <li>
-                <img src='http://placehold.it/310x120' />
+                <img src='http://placehold.it/310x120' /> {*In real system should be like this: <img src="{$partner->logo} />">*}
                 <p>
                     <b class="companyName dark">{$partner->name}</b>
                 </p>
@@ -37,7 +39,7 @@
     {foreach from = $partners item = partner}
         {if !$partner->isPartner}
             <li>
-                <img src='http://placehold.it/230x120' />
+                <img src='http://placehold.it/230x120' /> {*In real system should be like this: <img src="{$partner->logo} />">*}
             </li>
         {/if}
     {/foreach}

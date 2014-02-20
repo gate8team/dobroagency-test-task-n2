@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-02-20 18:17:56
+<?php /* Smarty version Smarty-3.1.16, created on 2014-02-20 18:30:05
          compiled from "views\templates\partners.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:32237530602f0cd3e16-21179249%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6e60aaeb18b86bdd0f391e992e32bbde3e8fbbe6' => 
     array (
       0 => 'views\\templates\\partners.tpl',
-      1 => 1392905873,
+      1 => 1392906593,
       2 => 'file',
     ),
   ),
@@ -38,7 +38,7 @@ $_smarty_tpl->tpl_vars['partner']->_loop = true;
 ?>
         <?php if ($_smarty_tpl->tpl_vars['partner']->value->isImportant) {?>
         <li>
-            <img src='http://placehold.it/450x120' />
+            <img src='http://placehold.it/450x120' /> 
             <p>
                 <b class="companyName dark"><?php echo $_smarty_tpl->tpl_vars['partner']->value->name;?>
 </b><br/>
@@ -62,7 +62,7 @@ $_smarty_tpl->tpl_vars['partner']->_loop = true;
 ?>
         <?php if (!$_smarty_tpl->tpl_vars['partner']->value->isImportant) {?>
             <li>
-                <img src='http://placehold.it/310x120' />
+                <img src='http://placehold.it/310x120' /> 
                 <p>
                     <b class="companyName dark"><?php echo $_smarty_tpl->tpl_vars['partner']->value->name;?>
 </b>
@@ -84,7 +84,7 @@ $_smarty_tpl->tpl_vars['partner']->_loop = true;
 ?>
         <?php if (!$_smarty_tpl->tpl_vars['partner']->value->isPartner) {?>
             <li>
-                <img src='http://placehold.it/230x120' />
+                <img src='http://placehold.it/230x120' /> 
             </li>
         <?php }?>
     <?php } ?>
