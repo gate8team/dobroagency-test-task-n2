@@ -11,7 +11,7 @@
     $smarty->cache_dir = BASE_VIEWS_PATH . 'cache/';
 
     $partners = new PartnerKeeper();
-    $partners->generatePartners(5);
+    $partners->generatePartners(12);
 
     $smarty->assign('partners', $partners->getPartners());
     $smarty->assign('tpl_name', 'partners');
